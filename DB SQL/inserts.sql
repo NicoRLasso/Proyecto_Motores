@@ -1,62 +1,11 @@
-INSERT INTO Asignatura (IdAsignatura, IdNivelPensum, Nombre, Creditos, AreaConocimientos, HoraSemestrePresencial,HoraSemestreTrabajoIndepen)
- VALUES
-(1,1,'Matematicas 1',3,'Disiplinar',8,16),
-(2,2,'Matematicas 2',3,'Disiplinar',8,16),
-(3,3,'Matematicas 3',3,'Disiplinar',8,16),
-(4,4,'Matematicas 4',3,'Disiplinar',8,16),
-(5,5,'Matematicas 5',3,'Disiplinar',8,16),
-(6,1,'Bases datos 1',3,'Interdisiplinar',8,16),
-(7,2,'Bases datos 2',3,'Interdisiplinar',8,16),
-(8,1,'Programacion 1',3,'Interdisiplinar',8,16),
-(9,2,'Programacion 2',3,'Interdisiplinar',8,16),
-(10,1,'Humanidades 1',3,'Disiplinar',8,16),
-(11,2,'Humanidades 2',3,'Disiplinar',8,16),
-(12,1,'Fisica 1',3,'Interdisiplinar',8,16),
-(13,2,'fisica 2',3,'Interdisiplinar',8,16),
-(14,2,'quimica',3,'Interdisiplinar',8,16),
-(15,3,'Fisica 3',3,'Interdisiplinar',8,16),
-(16,4,'fisica 4',3,'Interdisiplinar',8,16),
-(17,3,'Humanidades 3',3,'Interdisiplinar',8,16),
-(18,4,'Humanidades 4',3,'Interdisiplinar',8,16),
-(19,1,'Algoritmos 1',3,'Interdisiplinar',8,16),
-(20,2,'Algoritmos 2',3,'Interdisiplinar',8,16),
-(21,3,'Algoritmos 3',3,'Interdisiplinar',8,16),
-(22,4,'Algoritmos 4',3,'Interdisiplinar',8,16),
-(23,3,'Frameworks 1',3,'Interdisiplinar',8,16),
-(24,4,'Frameworks 2',3,'Interdisiplinar',8,16),
-(25,5,'Frameworks 3',3,'Interdisiplinar',8,16),
-(26,5,'Machine Learning 1',3,'Interdisiplinar',8,16),
-(27,5,'Motores de DB 1',3,'Interdisiplinar',8,16),
-(28,5,'Web Development 1',3,'Interdisiplinar',8,16),
-(29,5,'IOS Development 1',3,'Interdisiplinar',8,16),
-(30,6,'Frameworks 4',3,'Interdisiplinar',8,16),
-(31,6,'Machine Learning 2',3,'Interdisiplinar',8,16),
-(32,6,'Motores de DB 2',3,'Interdisiplinar',8,16),
-(33,6,'Web Development 2',3,'Interdisiplinar',8,16),
-(34,6,'IOS Development 2',3,'Interdisiplinar',8,16),
-(35,6,'Eica',3,'Disiplinar',8,16);
-INSERT INTO EstudiantePrograma (IdEstudiantePrograma, IdPersona, IdPrograma, CodEstudiante, IdPensum)
- VALUES
- (1,3,1,123456,1),
- (2,13,1,456789,1),
- (3,14,1,789456,1),
- (4,19,1,456123,1),
- (5,18,1,369258,1),
- (6,16,1,147258,1),
- (7,11,1,456987,1),
- (8,15,1,654123,1),
- (9,17,1,658986,1),
- (10,12,1,879621,1),
- (11,2,1,159874,1),
- (12,5,1,123587,1),
- (13,4,1,452123,1),
- (14,8,1,632479,1),
- (15,7,1,145212,1),
- (16,6,1,986214,1),
- (17,9,1,852159,1),
- (18,1,1,965789,1),
- (19,19,1,267541,1)
--- -----------------------
+INSERT INTO Seccional (IdSeccional, Nombre, CIUDAD, Direccion, Telefono, RECTOR) VALUES
+(1, 'Univ Santo tomas Sec. Tunja', 'TUNJA', 'Cra 11 # 3-38', 2147483647, 'Carlos Navas\r'),
+(2, 'Univ Santo tomas Sec. Villavicencio', 'VILLAVICENCIO', 'Cra 11 # 3-39', 2147483647, 'Pedro Ortiz\r'),
+(3, 'Univ Santo tomas Sec. Bucaramanga', 'BUCARAMANGA', 'Cra 11 # 3-40', 2147483647, 'Carlos Navas\r'),
+(4, 'Univ Santo tomas Sec. Medellin', 'MEDELLIN', 'Cra 11 # 3-41', 2147483647, 'Pedro Ortiz\r'),
+(5, 'Univ Santo tomas Sec. Bogota', 'BOGOTA', 'Cra 11 # 3-42', 2147483647, 'Carlos Navas\r'),
+(6, 'Univ Santo tomas Sec. VUAD', 'VUAD', 'Cra 11 # 3-43', 2147483647, 'Pedro Ortiz');
+
 
 INSERT INTO Divicion (IdDivicion, IdSeccional, NombreDivicion, DecanoDivicion, Direccion)
  VALUES
@@ -66,6 +15,37 @@ INSERT INTO Divicion (IdDivicion, IdSeccional, NombreDivicion, DecanoDivicion, D
  (4,1,'Artes','Diana Figueroa','cra 11 #11-14');
  
  
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (1, 3, 'CVR Energy Inc.', '83', 'Saint Paul');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (2, 2, 'Teekay Tankers Ltd.', '997', 'Madīnat Sittah Uktūbar');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (3, 2, 'Green Plains, Inc.', '7870', 'Ijero-Ekiti');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (4, 1, 'Maxwell Technologies, Inc.', '937', 'Gaotian');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (5, 3, 'Monarch Casino & Resort, Inc.', '987', 'Panzhou');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (6, 6, 'China Telecom Corp Ltd', '03', 'Ehu');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (7, 5, 'Andina Acquisition Corp. II', '4', 'Lomé');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (8, 4, 'Gray Television, Inc.', '5166', 'Shimen');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (9, 1, 'TC PipeLines, LP', '4617', 'Mbongawani');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (10, 3, 'Axovant Sciences Ltd.', '314', 'Chociwel');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (11, 1, 'Suncor Energy  Inc.', '86927', 'Troyes');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (12, 6, 'Bridge Bancorp, Inc.', '11040', 'Água de Pau');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (13, 1, 'MasTec, Inc.', '5', 'Tsu-shi');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (14, 2, 'Five Oaks Investment Corp.', '7', 'Corumbá');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (15, 5, 'Forterra, Inc.', '6114', 'Banjar Jabejero');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (16, 4, 'Veritone, Inc.', '545', 'Xuchang');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (17, 1, 'Mitcham Industries, Inc.', '65', 'Toupopu');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (18, 4, 'Wal-Mart Stores, Inc.', '5', 'Aix-en-Provence');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (19, 5, 'Coach, Inc.', '00541', 'Tours');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (20, 4, 'CTI BioPharma Corp.', '821', 'Guojiazhuang');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (21, 3, 'Morgan Stanley', '583', 'Targuist');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (22, 4, 'iShares MSCI ACWI Index Fund', '19137', 'Skopin');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (23, 4, 'Arc Logistic Partners LP', '2331', 'Malandag');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (24, 5, 'Otonomy, Inc.', '864', 'Adygeysk');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (25, 6, 'CardConnect Corp.', '39531', 'Bentar');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (26, 1, 'Cara Therapeutics, Inc.', '4', 'Osiek');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (27, 4, 'PennyMac Financial Services, Inc.', '33', 'Petushki');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (28, 2, 'Discovery Communications, Inc.', '594', 'Detusoko');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (29, 6, 'Nuveen New Jersey Quality Municipal Income Fund', '3057', 'Suicheng');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (30, 5, 'Fidelity Southern Corporation', '1616', 'Belyy Gorodok');
+
 INSERT INTO Facultad (IdFacultad, IdDivicion, NombreFacultad, Decano, Telefono)
  VALUES
  (1,1,'Diseño Grafico','Predo Perez',3016250495),
@@ -84,7 +64,52 @@ INSERT INTO Facultad (IdFacultad, IdDivicion, NombreFacultad, Decano, Telefono)
  (14,4,'Poesia y Declamacion','Camila Restrepo',3132053560);
  
 
- 
+
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (1, 5, 'Asoka', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (2, 5, 'Tresom', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (3, 8, 'Alpha', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (4, 2, 'Keylex', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (5, 1, 'Viva', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (6, 10, 'Fix San', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (7, 1, 'Mat Lam Tam', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (8, 9, 'Temp', 'Presencial', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (9, 9, 'Stim', 'Virtual', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (10, 2, 'Hatity', 'Virtual', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (11, 4, 'Lotlux', 'Virtual', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (12, 11, 'Zaam-Dox', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (13, 3, 'Pannier', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (14, 13, 'Solarbreeze', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (15, 6, 'Treeflex', 'Virtual', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (16, 14, 'Gembucket', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (17, 4, 'Zaam-Dox', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (18, 14, 'Duobam', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (19, 5, 'Zoolab', 'Virtual', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (20, 13, 'Matsoft', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (21, 9, 'Regrant', 'Presencial', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (22, 11, 'Namfix', 'Presencial', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (23, 10, 'Regrant', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (24, 6, 'Bitwolf', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (25, 4, 'Konklux', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (26, 14, 'Y-Solowarm', 'Presencial', true);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (27, 8, 'Stringtough', 'Presencial', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (28, 3, 'Tampflex', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (29, 12, 'Fix San', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (30, 6, 'Ventosanzap', 'Virtual', false);
+
+INSERT INTO pensum (IdPensum, IdPrograma, Activo,Oferta)
+VALUES
+(1,1,'Activo','Hasta 40 Estudiantes');
+
+INSERT INTO nivel (IdNivelPensum, nivel , idpensum)
+VALUES
+(1,1,1),
+(2,2,1),
+(3,3,1),
+(4,4,1),
+(5,5,1),
+(6,6,1);
+
+
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (1, 999999, 'Fram', '10/26/1998', 'Anatole', 'Bayldon', 3461533);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (2, 1000000, 'Pulo', '5/18/2001', 'Ardyth', 'Di Domenico', 3822380);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (3, 999999, 'Escada', '4/29/1996', 'Domingo', 'Pendrick', 3064034);
@@ -126,7 +151,7 @@ insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, 
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (39, 999999, 'Baimajing', '8/10/1996', 'Odelinda', 'Pedwell', 3309183);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (40, 1000000, 'Boguchwała', '7/15/2002', 'Mellisent', 'Olivetti', 3900525);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (41, 999999, 'Vilarinho das Cambas', '10/31/1996', 'Clayton', 'Yell', 3151677);
-insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (42, 1000000, 'Doctor Juan León Mallorquín', '3/17/2002', 'Dwain', 'Roblin', 3946088);
+insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (42, 1000000, 'Doctor Juan', '3/17/2002', 'Dwain', 'Roblin', 3946088);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (43, 999999, 'Konstantinovo', '4/9/2001', 'Tiler', 'Grevatt', 3632286);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (44, 999999, 'Dapaong', '8/15/2002', 'Carilyn', 'Sadat', 3957445);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (45, 999999, 'Fengle', '1/20/1999', 'Nanine', 'Colaco', 3290224);
@@ -186,204 +211,266 @@ insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, 
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (99, 1000000, 'Volgo-Kaspiyskiy', '3/8/2003', 'Robinetta', 'Mapston', 3256047);
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (100, 999999, 'Qianjin', '11/18/1997', 'Luelle', 'McConaghy', 3788686);
 
+INSERT INTO EstudiantePrograma (IdEstudiantePrograma, IdPersona, IdPrograma, CodEstudiante, IdPensum)
+VALUES
+(1,3,1,123456,1),
+(2,13,1,456789,1),
+(3,14,1,789456,1),
+(4,19,1,456123,1),
+(5,18,1,369258,1),
+(6,16,1,147258,1),
+(7,11,1,456987,1),
+(8,15,1,654123,1),
+(9,17,1,658986,1),
+(10,12,1,879621,1),
+(11,2,1,159874,1),
+(12,5,1,123587,1),
+(13,4,1,452123,1),
+(14,8,1,632479,1),
+(15,7,1,145212,1),
+(16,6,1,986214,1),
+(17,9,1,852159,1),
+(18,1,1,965789,1),
+(19,19,1,267541,1);
 
 
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (1, 5, 'Asoka', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (2, 5, 'Tresom', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (3, 8, 'Alpha', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (4, 2, 'Keylex', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (5, 1, 'Viva', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (6, 10, 'Fix San', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (7, 1, 'Mat Lam Tam', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (8, 9, 'Temp', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (9, 9, 'Stim', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (10, 2, 'Hatity', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (11, 4, 'Lotlux', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (12, 11, 'Zaam-Dox', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (13, 3, 'Pannier', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (14, 13, 'Solarbreeze', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (15, 6, 'Treeflex', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (16, 14, 'Gembucket', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (17, 4, 'Zaam-Dox', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (18, 14, 'Duobam', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (19, 5, 'Zoolab', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (20, 13, 'Matsoft', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (21, 9, 'Regrant', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (22, 11, 'Namfix', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (23, 10, 'Regrant', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (24, 6, 'Bitwolf', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (25, 4, 'Konklux', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (26, 14, 'Y-Solowarm', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (27, 8, 'Stringtough', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (28, 3, 'Tampflex', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (29, 12, 'Fix San', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (30, 6, 'Ventosanzap', 'Virtual', false);
+insert into docente (coddocente, idpersona, area) values (1, 53, 'Matematicas');
+insert into docente (coddocente, idpersona, area) values (2, 24, 'Matematicas');
+insert into docente (coddocente, idpersona, area) values (3, 97, 'Matematicas');
+insert into docente (coddocente, idpersona, area) values (4, 70, 'Matematicas');
+insert into docente (coddocente, idpersona, area) values (5, 11, 'Matematicas');
+insert into docente (coddocente, idpersona, area) values (6, 87, 'Matematicas');
+insert into docente (coddocente, idpersona, area) values (7, 16, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (8, 86, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (9, 73, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (10, 58, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (11, 55, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (12, 8, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (13, 4, 'Sociales');
+insert into docente (coddocente, idpersona, area) values (14, 58, 'Ingles');
+insert into docente (coddocente, idpersona, area) values (15, 74, 'Ingles');
+insert into docente (coddocente, idpersona, area) values (16, 29, 'Ingles');
+insert into docente (coddocente, idpersona, area) values (17, 24, 'Ingles');
+insert into docente (coddocente, idpersona, area) values (18, 60, 'Ingles');
+insert into docente (coddocente, idpersona, area) values (19, 31, 'Ingles');
+insert into docente (coddocente, idpersona, area) values (20, 24, 'Calculo');
+insert into docente (coddocente, idpersona, area) values (21, 40, 'Calculo');
+insert into docente (coddocente, idpersona, area) values (22, 61, 'Calculo');
+insert into docente (coddocente, idpersona, area) values (23, 42, 'Calculo');
+insert into docente (coddocente, idpersona, area) values (24, 48, 'Calculo');
+insert into docente (coddocente, idpersona, area) values (25, 42, 'Calculo');
+insert into docente (coddocente, idpersona, area) values (26, 59, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (27, 35, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (28, 29, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (29, 17, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (30, 73, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (31, 64, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (32, 55, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (33, 6, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (34, 38, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (35, 55, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (36, 25, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (37, 8, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (38, 83, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (39, 69, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (40, 47, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (41, 46, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (42, 5, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (43, 7, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (44, 41, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (45, 65, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (46, 43, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (47, 52, 'Medicina');
+insert into docente (coddocente, idpersona, area) values (48, 22, 'Artes');
+insert into docente (coddocente, idpersona, area) values (49, 53, 'Artes');
+insert into docente (coddocente, idpersona, area) values (50, 83, 'Artes');
+insert into docente (coddocente, idpersona, area) values (51, 50, 'Artes');
+insert into docente (coddocente, idpersona, area) values (52, 34, 'Artes');
+insert into docente (coddocente, idpersona, area) values (53, 98, 'Artes');
+insert into docente (coddocente, idpersona, area) values (54, 11, 'Artes');
+insert into docente (coddocente, idpersona, area) values (55, 10, 'Artes');
+insert into docente (coddocente, idpersona, area) values (56, 47, 'Artes');
+insert into docente (coddocente, idpersona, area) values (57, 77, 'Artes');
+insert into docente (coddocente, idpersona, area) values (58, 58, 'Artes');
+insert into docente (coddocente, idpersona, area) values (59, 67, 'Artes');
+insert into docente (coddocente, idpersona, area) values (60, 37, 'Artes');
+insert into docente (coddocente, idpersona, area) values (61, 23, 'Artes');
+insert into docente (coddocente, idpersona, area) values (62, 89, 'Artes');
+insert into docente (coddocente, idpersona, area) values (63, 56, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (64, 55, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (65, 38, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (66, 20, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (67, 63, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (68, 94, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (69, 59, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (70, 33, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (71, 40, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (72, 67, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (73, 74, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (74, 65, 'Arquitectura');
+insert into docente (coddocente, idpersona, area) values (75, 33, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (76, 46, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (77, 13, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (78, 14, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (79, 41, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (80, 42, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (81, 78, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (82, 88, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (83, 13, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (84, 41, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (85, 81, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (86, 51, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (87, 35, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (88, 3, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (89, 53, 'Humanidades');
+insert into docente (coddocente, idpersona, area) values (90, 55, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (91, 28, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (92, 56, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (93, 46, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (94, 84, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (95, 99, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (96, 55, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (97, 13, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (98, 96, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (99, 8, 'Ingenieria');
+insert into docente (coddocente, idpersona, area) values (100, 67, 'Ingenieria');
 
 
-
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (1, 3, 'CVR Energy Inc.', '83', 'Saint Paul');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (2, 2, 'Teekay Tankers Ltd.', '997', 'Madīnat Sittah Uktūbar');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (3, 2, 'Green Plains, Inc.', '7870', 'Ijero-Ekiti');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (4, 1, 'Maxwell Technologies, Inc.', '937', 'Gaotian');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (5, 3, 'Monarch Casino & Resort, Inc.', '987', 'Panzhou');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (6, 6, 'China Telecom Corp Ltd', '03', 'Ehu');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (7, 5, 'Andina Acquisition Corp. II', '4', 'Lomé');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (8, 4, 'Gray Television, Inc.', '5166', 'Shimen');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (9, 1, 'TC PipeLines, LP', '4617', 'Mbongawani');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (10, 3, 'Axovant Sciences Ltd.', '314', 'Chociwel');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (11, 1, 'Suncor Energy  Inc.', '86927', 'Troyes');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (12, 6, 'Bridge Bancorp, Inc.', '11040', 'Água de Pau');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (13, 1, 'MasTec, Inc.', '5', 'Tsu-shi');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (14, 2, 'Five Oaks Investment Corp.', '7', 'Corumbá');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (15, 5, 'Forterra, Inc.', '6114', 'Banjar Jabejero');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (16, 4, 'Veritone, Inc.', '545', 'Xuchang');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (17, 1, 'Mitcham Industries, Inc.', '65', 'Toupopu');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (18, 4, 'Wal-Mart Stores, Inc.', '5', 'Aix-en-Provence');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (19, 5, 'Coach, Inc.', '00541', 'Tours');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (20, 4, 'CTI BioPharma Corp.', '821', 'Guojiazhuang');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (21, 3, 'Morgan Stanley', '583', 'Targuist');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (22, 4, 'iShares MSCI ACWI Index Fund', '19137', 'Skopin');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (23, 4, 'Arc Logistic Partners LP', '2331', 'Malandag');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (24, 5, 'Otonomy, Inc.', '864', 'Adygeysk');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (25, 6, 'CardConnect Corp.', '39531', 'Bentar');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (26, 1, 'Cara Therapeutics, Inc.', '4', 'Osiek');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (27, 4, 'PennyMac Financial Services, Inc.', '33', 'Petushki');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (28, 2, 'Discovery Communications, Inc.', '594', 'Detusoko');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (29, 6, 'Nuveen New Jersey Quality Municipal Income Fund', '3057', 'Suicheng');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (30, 5, 'Fidelity Southern Corporation', '1616', 'Belyy Gorodok');
-
-insert into docente (coddocente, idpersona, area) values (1, 53, 'Center');
-insert into docente (coddocente, idpersona, area) values (2, 24, 'Court');
-insert into docente (coddocente, idpersona, area) values (3, 97, 'Terrace');
-insert into docente (coddocente, idpersona, area) values (4, 70, 'Park');
-insert into docente (coddocente, idpersona, area) values (5, 11, 'Drive');
-insert into docente (coddocente, idpersona, area) values (6, 87, 'Park');
-insert into docente (coddocente, idpersona, area) values (7, 16, 'Avenue');
-insert into docente (coddocente, idpersona, area) values (8, 86, 'Trail');
-insert into docente (coddocente, idpersona, area) values (9, 73, 'Park');
-insert into docente (coddocente, idpersona, area) values (10, 58, 'Drive');
-insert into docente (coddocente, idpersona, area) values (11, 55, 'Crossing');
-insert into docente (coddocente, idpersona, area) values (12, 8, 'Place');
-insert into docente (coddocente, idpersona, area) values (13, 4, 'Trail');
-insert into docente (coddocente, idpersona, area) values (14, 58, 'Lane');
-insert into docente (coddocente, idpersona, area) values (15, 74, 'Terrace');
-insert into docente (coddocente, idpersona, area) values (16, 29, 'Parkway');
-insert into docente (coddocente, idpersona, area) values (17, 24, 'Circle');
-insert into docente (coddocente, idpersona, area) values (18, 60, 'Circle');
-insert into docente (coddocente, idpersona, area) values (19, 31, 'Way');
-insert into docente (coddocente, idpersona, area) values (20, 24, 'Plaza');
-insert into docente (coddocente, idpersona, area) values (21, 40, 'Junction');
-insert into docente (coddocente, idpersona, area) values (22, 61, 'Way');
-insert into docente (coddocente, idpersona, area) values (23, 42, 'Junction');
-insert into docente (coddocente, idpersona, area) values (24, 48, 'Circle');
-insert into docente (coddocente, idpersona, area) values (25, 42, 'Center');
-insert into docente (coddocente, idpersona, area) values (26, 59, 'Point');
-insert into docente (coddocente, idpersona, area) values (27, 35, 'Way');
-insert into docente (coddocente, idpersona, area) values (28, 29, 'Way');
-insert into docente (coddocente, idpersona, area) values (29, 17, 'Point');
-insert into docente (coddocente, idpersona, area) values (30, 73, 'Street');
-insert into docente (coddocente, idpersona, area) values (31, 64, 'Avenue');
-insert into docente (coddocente, idpersona, area) values (32, 55, 'Place');
-insert into docente (coddocente, idpersona, area) values (33, 6, 'Alley');
-insert into docente (coddocente, idpersona, area) values (34, 38, 'Plaza');
-insert into docente (coddocente, idpersona, area) values (35, 55, 'Court');
-insert into docente (coddocente, idpersona, area) values (36, 25, 'Hill');
-insert into docente (coddocente, idpersona, area) values (37, 8, 'Place');
-insert into docente (coddocente, idpersona, area) values (38, 83, 'Plaza');
-insert into docente (coddocente, idpersona, area) values (39, 69, 'Pass');
-insert into docente (coddocente, idpersona, area) values (40, 47, 'Trail');
-insert into docente (coddocente, idpersona, area) values (41, 46, 'Terrace');
-insert into docente (coddocente, idpersona, area) values (42, 5, 'Junction');
-insert into docente (coddocente, idpersona, area) values (43, 7, 'Circle');
-insert into docente (coddocente, idpersona, area) values (44, 41, 'Street');
-insert into docente (coddocente, idpersona, area) values (45, 65, 'Parkway');
-insert into docente (coddocente, idpersona, area) values (46, 43, 'Road');
-insert into docente (coddocente, idpersona, area) values (47, 52, 'Circle');
-insert into docente (coddocente, idpersona, area) values (48, 22, 'Drive');
-insert into docente (coddocente, idpersona, area) values (49, 53, 'Plaza');
-insert into docente (coddocente, idpersona, area) values (50, 83, 'Court');
-insert into docente (coddocente, idpersona, area) values (51, 50, 'Hill');
-insert into docente (coddocente, idpersona, area) values (52, 34, 'Point');
-insert into docente (coddocente, idpersona, area) values (53, 98, 'Crossing');
-insert into docente (coddocente, idpersona, area) values (54, 11, 'Parkway');
-insert into docente (coddocente, idpersona, area) values (55, 10, 'Parkway');
-insert into docente (coddocente, idpersona, area) values (56, 47, 'Drive');
-insert into docente (coddocente, idpersona, area) values (57, 77, 'Hill');
-insert into docente (coddocente, idpersona, area) values (58, 58, 'Street');
-insert into docente (coddocente, idpersona, area) values (59, 67, 'Center');
-insert into docente (coddocente, idpersona, area) values (60, 37, 'Avenue');
-insert into docente (coddocente, idpersona, area) values (61, 23, 'Street');
-insert into docente (coddocente, idpersona, area) values (62, 89, 'Junction');
-insert into docente (coddocente, idpersona, area) values (63, 56, 'Alley');
-insert into docente (coddocente, idpersona, area) values (64, 55, 'Court');
-insert into docente (coddocente, idpersona, area) values (65, 38, 'Hill');
-insert into docente (coddocente, idpersona, area) values (66, 20, 'Plaza');
-insert into docente (coddocente, idpersona, area) values (67, 63, 'Park');
-insert into docente (coddocente, idpersona, area) values (68, 94, 'Lane');
-insert into docente (coddocente, idpersona, area) values (69, 59, 'Junction');
-insert into docente (coddocente, idpersona, area) values (70, 33, 'Plaza');
-insert into docente (coddocente, idpersona, area) values (71, 40, 'Lane');
-insert into docente (coddocente, idpersona, area) values (72, 67, 'Drive');
-insert into docente (coddocente, idpersona, area) values (73, 74, 'Alley');
-insert into docente (coddocente, idpersona, area) values (74, 65, 'Junction');
-insert into docente (coddocente, idpersona, area) values (75, 33, 'Place');
-insert into docente (coddocente, idpersona, area) values (76, 46, 'Street');
-insert into docente (coddocente, idpersona, area) values (77, 13, 'Hill');
-insert into docente (coddocente, idpersona, area) values (78, 14, 'Court');
-insert into docente (coddocente, idpersona, area) values (79, 41, 'Place');
-insert into docente (coddocente, idpersona, area) values (80, 42, 'Court');
-insert into docente (coddocente, idpersona, area) values (81, 78, 'Trail');
-insert into docente (coddocente, idpersona, area) values (82, 88, 'Terrace');
-insert into docente (coddocente, idpersona, area) values (83, 13, 'Point');
-insert into docente (coddocente, idpersona, area) values (84, 41, 'Terrace');
-insert into docente (coddocente, idpersona, area) values (85, 81, 'Circle');
-insert into docente (coddocente, idpersona, area) values (86, 51, 'Place');
-insert into docente (coddocente, idpersona, area) values (87, 35, 'Pass');
-insert into docente (coddocente, idpersona, area) values (88, 3, 'Crossing');
-insert into docente (coddocente, idpersona, area) values (89, 53, 'Terrace');
-insert into docente (coddocente, idpersona, area) values (90, 55, 'Way');
-insert into docente (coddocente, idpersona, area) values (91, 28, 'Drive');
-insert into docente (coddocente, idpersona, area) values (92, 56, 'Pass');
-insert into docente (coddocente, idpersona, area) values (93, 46, 'Court');
-insert into docente (coddocente, idpersona, area) values (94, 84, 'Circle');
-insert into docente (coddocente, idpersona, area) values (95, 99, 'Alley');
-insert into docente (coddocente, idpersona, area) values (96, 55, 'Point');
-insert into docente (coddocente, idpersona, area) values (97, 13, 'Point');
-insert into docente (coddocente, idpersona, area) values (98, 96, 'Circle');
-insert into docente (coddocente, idpersona, area) values (99, 8, 'Pass');
-insert into docente (coddocente, idpersona, area) values (100, 67, 'Place');
-
-
-INSERT INTO Seccional (IdSeccional, Nombre, CIUDAD, Direccion, Telefono, RECTOR) VALUES
-(1, 'Univ Santo tomas Sec. Tunja', 'TUNJA', 'Cra 11 # 3-38', 2147483647, 'Carlos Navas\r'),
-(2, 'Univ Santo tomas Sec. Villavicencio', 'VILLAVICENCIO', 'Cra 11 # 3-39', 2147483647, 'Pedro Ortiz\r'),
-(3, 'Univ Santo tomas Sec. Bucaramanga', 'BUCARAMANGA', 'Cra 11 # 3-40', 2147483647, 'Carlos Navas\r'),
-(4, 'Univ Santo tomas Sec. Medellin', 'MEDELLIN', 'Cra 11 # 3-41', 2147483647, 'Pedro Ortiz\r'),
-(5, 'Univ Santo tomas Sec. Bogota', 'BOGOTA', 'Cra 11 # 3-42', 2147483647, 'Carlos Navas\r'),
-(6, 'Univ Santo tomas Sec. VUAD', 'VUAD', 'Cra 11 # 3-43', 2147483647, 'Pedro Ortiz');
-
--- --------------------------------------------------------
-
---
-
-INSERT INTO Grupo (idgrupo, idasignatura , CodDocente)
+INSERT INTO Asignatura (IdAsignatura, IdNivelPensum, Nombre, Creditos, AreaConocimientos, HoraSemestrePresencial,HoraSemestreTrabajoIndepen)
  VALUES
- (1,1,100),
- (2,2,85),
- (3,3,3),
- (4,4,9),
- (5,5,35),
- (6,6,55)
- 
- INSERT INTO nivel (IdNivelPensum, nivel , idpensum)
- VALUES
- (1,1,1),
- (2,2,1),
- (3,3,1),
- (4,4,1),
- (5,5,1),
- (6,6,1)
- 
- INSERT INTO pensum (IdPensum, IdPrograma, Activo,Oferta)
- VALUES
- (1,1,'Activo','Hasta 40 Estudiantes')
+(1,1,'Matematicas 1',3,'Disiplinar',8,16),
+(2,2,'Matematicas 2',3,'Disiplinar',8,16),
+(3,3,'Matematicas 3',3,'Disiplinar',8,16),
+(4,4,'Matematicas 4',3,'Disiplinar',8,16),
+(5,5,'Matematicas 5',3,'Disiplinar',8,16),
+(6,1,'Bases datos 1',3,'Interdisiplinar',8,16),
+(7,2,'Bases datos 2',3,'Interdisiplinar',8,16),
+(8,1,'Programacion 1',3,'Interdisiplinar',8,16),
+(9,2,'Programacion 2',3,'Interdisiplinar',8,16),
+(10,1,'Humanidades 1',3,'Disiplinar',8,16),
+(11,2,'Humanidades 2',3,'Disiplinar',8,16),
+(12,1,'Fisica 1',3,'Interdisiplinar',8,16),
+(13,2,'fisica 2',3,'Interdisiplinar',8,16),
+(14,2,'quimica',3,'Interdisiplinar',8,16),
+(15,3,'Fisica 3',3,'Interdisiplinar',8,16),
+(16,4,'fisica 4',3,'Interdisiplinar',8,16),
+(17,3,'Humanidades 3',3,'Interdisiplinar',8,16),
+(18,4,'Humanidades 4',3,'Interdisiplinar',8,16),
+(19,1,'Algoritmos 1',3,'Interdisiplinar',8,16),
+(20,2,'Algoritmos 2',3,'Interdisiplinar',8,16),
+(21,3,'Algoritmos 3',3,'Interdisiplinar',8,16),
+(22,4,'Algoritmos 4',3,'Interdisiplinar',8,16),
+(23,3,'Frameworks 1',3,'Interdisiplinar',8,16),
+(24,4,'Frameworks 2',3,'Interdisiplinar',8,16),
+(25,5,'Frameworks 3',3,'Interdisiplinar',8,16),
+(26,5,'Machine Learning 1',3,'Interdisiplinar',8,16),
+(27,5,'Motores de DB 1',3,'Interdisiplinar',8,16),
+(28,5,'Web Development 1',3,'Interdisiplinar',8,16),
+(29,5,'IOS Development 1',3,'Interdisiplinar',8,16),
+(30,6,'Frameworks 4',3,'Interdisiplinar',8,16),
+(31,6,'Machine Learning 2',3,'Interdisiplinar',8,16),
+(32,6,'Motores de DB 2',3,'Interdisiplinar',8,16),
+(33,6,'Web Development 2',3,'Interdisiplinar',8,16),
+(34,6,'IOS Development 2',3,'Interdisiplinar',8,16),
+(35,6,'Eica',3,'Disiplinar',8,16);
+
+insert into grupo (idgrupo, idasinatura, coddocente) values (1, 8, 10);
+insert into grupo (idgrupo, idasinatura, coddocente) values (2, 1, 18);
+insert into grupo (idgrupo, idasinatura, coddocente) values (3, 16, 52);
+insert into grupo (idgrupo, idasinatura, coddocente) values (4, 6, 62);
+insert into grupo (idgrupo, idasinatura, coddocente) values (5, 8, 42);
+insert into grupo (idgrupo, idasinatura, coddocente) values (6, 26, 27);
+insert into grupo (idgrupo, idasinatura, coddocente) values (7, 21, 95);
+insert into grupo (idgrupo, idasinatura, coddocente) values (8, 8, 64);
+insert into grupo (idgrupo, idasinatura, coddocente) values (9, 19, 42);
+insert into grupo (idgrupo, idasinatura, coddocente) values (10, 14, 89);
+insert into grupo (idgrupo, idasinatura, coddocente) values (11, 27, 84);
+insert into grupo (idgrupo, idasinatura, coddocente) values (12, 27, 54);
+insert into grupo (idgrupo, idasinatura, coddocente) values (13, 9, 63);
+insert into grupo (idgrupo, idasinatura, coddocente) values (14, 7, 45);
+insert into grupo (idgrupo, idasinatura, coddocente) values (15, 15, 44);
+insert into grupo (idgrupo, idasinatura, coddocente) values (16, 24, 87);
+insert into grupo (idgrupo, idasinatura, coddocente) values (17, 10, 77);
+insert into grupo (idgrupo, idasinatura, coddocente) values (18, 17, 58);
+insert into grupo (idgrupo, idasinatura, coddocente) values (19, 19, 85);
+insert into grupo (idgrupo, idasinatura, coddocente) values (20, 20, 34);
+insert into grupo (idgrupo, idasinatura, coddocente) values (21, 1, 73);
+insert into grupo (idgrupo, idasinatura, coddocente) values (22, 26, 11);
+insert into grupo (idgrupo, idasinatura, coddocente) values (23, 28, 57);
+insert into grupo (idgrupo, idasinatura, coddocente) values (24, 29, 92);
+insert into grupo (idgrupo, idasinatura, coddocente) values (25, 13, 96);
+insert into grupo (idgrupo, idasinatura, coddocente) values (26, 20, 69);
+insert into grupo (idgrupo, idasinatura, coddocente) values (27, 30, 33);
+insert into grupo (idgrupo, idasinatura, coddocente) values (28, 22, 58);
+insert into grupo (idgrupo, idasinatura, coddocente) values (29, 19, 90);
+insert into grupo (idgrupo, idasinatura, coddocente) values (30, 15, 43);
+insert into grupo (idgrupo, idasinatura, coddocente) values (31, 16, 15);
+insert into grupo (idgrupo, idasinatura, coddocente) values (32, 16, 4);
+insert into grupo (idgrupo, idasinatura, coddocente) values (33, 21, 50);
+insert into grupo (idgrupo, idasinatura, coddocente) values (34, 17, 80);
+insert into grupo (idgrupo, idasinatura, coddocente) values (35, 15, 92);
+insert into grupo (idgrupo, idasinatura, coddocente) values (36, 3, 7);
+insert into grupo (idgrupo, idasinatura, coddocente) values (37, 8, 78);
+insert into grupo (idgrupo, idasinatura, coddocente) values (38, 16, 26);
+insert into grupo (idgrupo, idasinatura, coddocente) values (39, 7, 20);
+insert into grupo (idgrupo, idasinatura, coddocente) values (40, 2, 24);
+insert into grupo (idgrupo, idasinatura, coddocente) values (41, 11, 73);
+insert into grupo (idgrupo, idasinatura, coddocente) values (42, 26, 4);
+insert into grupo (idgrupo, idasinatura, coddocente) values (43, 29, 24);
+insert into grupo (idgrupo, idasinatura, coddocente) values (44, 2, 92);
+insert into grupo (idgrupo, idasinatura, coddocente) values (45, 20, 26);
+insert into grupo (idgrupo, idasinatura, coddocente) values (46, 6, 34);
+insert into grupo (idgrupo, idasinatura, coddocente) values (47, 3, 78);
+insert into grupo (idgrupo, idasinatura, coddocente) values (48, 12, 12);
+insert into grupo (idgrupo, idasinatura, coddocente) values (49, 8, 98);
+insert into grupo (idgrupo, idasinatura, coddocente) values (50, 15, 21);
+insert into grupo (idgrupo, idasinatura, coddocente) values (51, 9, 75);
+insert into grupo (idgrupo, idasinatura, coddocente) values (52, 15, 22);
+insert into grupo (idgrupo, idasinatura, coddocente) values (53, 28, 81);
+insert into grupo (idgrupo, idasinatura, coddocente) values (54, 12, 78);
+insert into grupo (idgrupo, idasinatura, coddocente) values (55, 6, 60);
+insert into grupo (idgrupo, idasinatura, coddocente) values (56, 8, 44);
+insert into grupo (idgrupo, idasinatura, coddocente) values (57, 10, 63);
+insert into grupo (idgrupo, idasinatura, coddocente) values (58, 2, 20);
+insert into grupo (idgrupo, idasinatura, coddocente) values (59, 2, 83);
+insert into grupo (idgrupo, idasinatura, coddocente) values (60, 3, 37);
+insert into grupo (idgrupo, idasinatura, coddocente) values (61, 16, 70);
+insert into grupo (idgrupo, idasinatura, coddocente) values (62, 23, 84);
+insert into grupo (idgrupo, idasinatura, coddocente) values (63, 22, 42);
+insert into grupo (idgrupo, idasinatura, coddocente) values (64, 10, 73);
+insert into grupo (idgrupo, idasinatura, coddocente) values (65, 27, 70);
+insert into grupo (idgrupo, idasinatura, coddocente) values (66, 15, 44);
+insert into grupo (idgrupo, idasinatura, coddocente) values (67, 12, 93);
+insert into grupo (idgrupo, idasinatura, coddocente) values (68, 12, 89);
+insert into grupo (idgrupo, idasinatura, coddocente) values (69, 29, 56);
+insert into grupo (idgrupo, idasinatura, coddocente) values (70, 16, 12);
+insert into grupo (idgrupo, idasinatura, coddocente) values (71, 4, 58);
+insert into grupo (idgrupo, idasinatura, coddocente) values (72, 20, 15);
+insert into grupo (idgrupo, idasinatura, coddocente) values (73, 29, 41);
+insert into grupo (idgrupo, idasinatura, coddocente) values (74, 21, 76);
+insert into grupo (idgrupo, idasinatura, coddocente) values (75, 16, 89);
+insert into grupo (idgrupo, idasinatura, coddocente) values (76, 6, 58);
+insert into grupo (idgrupo, idasinatura, coddocente) values (77, 29, 27);
+insert into grupo (idgrupo, idasinatura, coddocente) values (78, 29, 11);
+insert into grupo (idgrupo, idasinatura, coddocente) values (79, 15, 25);
+insert into grupo (idgrupo, idasinatura, coddocente) values (80, 22, 64);
+insert into grupo (idgrupo, idasinatura, coddocente) values (81, 9, 31);
+insert into grupo (idgrupo, idasinatura, coddocente) values (82, 27, 28);
+insert into grupo (idgrupo, idasinatura, coddocente) values (83, 13, 72);
+insert into grupo (idgrupo, idasinatura, coddocente) values (84, 11, 13);
+insert into grupo (idgrupo, idasinatura, coddocente) values (85, 18, 52);
+insert into grupo (idgrupo, idasinatura, coddocente) values (86, 24, 39);
+insert into grupo (idgrupo, idasinatura, coddocente) values (87, 7, 92);
+insert into grupo (idgrupo, idasinatura, coddocente) values (88, 21, 35);
+insert into grupo (idgrupo, idasinatura, coddocente) values (89, 16, 39);
+insert into grupo (idgrupo, idasinatura, coddocente) values (90, 14, 74);
+insert into grupo (idgrupo, idasinatura, coddocente) values (91, 12, 48);
+insert into grupo (idgrupo, idasinatura, coddocente) values (92, 24, 92);
+insert into grupo (idgrupo, idasinatura, coddocente) values (93, 6, 100);
+insert into grupo (idgrupo, idasinatura, coddocente) values (94, 7, 12);
+insert into grupo (idgrupo, idasinatura, coddocente) values (95, 13, 34);
+insert into grupo (idgrupo, idasinatura, coddocente) values (96, 9, 3);
+insert into grupo (idgrupo, idasinatura, coddocente) values (97, 16, 20);
+insert into grupo (idgrupo, idasinatura, coddocente) values (98, 19, 54);
+insert into grupo (idgrupo, idasinatura, coddocente) values (99, 2, 79);
+insert into grupo (idgrupo, idasinatura, coddocente) values (100, 5, 56);
