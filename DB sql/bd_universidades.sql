@@ -1,5 +1,3 @@
-
-
 CREATE TABLE Asignatura (
   IdAsignatura int NOT NULL,
   IdNivelPensum int NOT NULL,
