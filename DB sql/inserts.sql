@@ -98,7 +98,6 @@ insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo)
 
 INSERT INTO pensum (IdPensum, IdPrograma, Activo,Oferta)
 VALUES
-<<<<<<< HEAD:DB sql/inserts.sql
 (1,1,'Activo','Hasta 20 Estudiantes'),
 (2,3,'Inactivo','Hasta 30 Estudiantes'),
 (4,2,'Activo','Hasta 20 Estudiantes'),
@@ -120,6 +119,7 @@ VALUES
 (19,20,'Activo','Hasta 30 Estudiantes'),
 (20,22,'Activo','Hasta 40 Estudiantes'),
 (22,23,'Inactivo','Hasta 40 Estudiantes'),
+(23,21,'Inactivo','Hasta 40 Estudiantes'),
 (21,21,'Activo','Hasta 30 Estudiantes'),
 (24,24,'Inactivo','Hasta 30 Estudiantes'),
 (25,25,'Activo','Hasta 40 Estudiantes'),
@@ -129,18 +129,14 @@ VALUES
 (29,29,'Activo','Hasta 20 Estudiantes'),
 (30,30,'Inactivo','Hasta 40 Estudiantes');
 
-=======
-(1,1,'Activo','Hasta 40 Estudiantes');
->>>>>>> fb7819bdd4c198a54d90574ab149df82d3a6cc02:DB SQL/inserts.sql
 
-INSERT INTO nivel (IdNivelPensum, nivel , idpensum)
-VALUES
-(1,1,1),
-(2,2,1),
-(3,3,1),
-(4,4,1),
-(5,5,1),
-(6,6,1);
+INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(1, 1, 1);
+INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(2, 2, 2);
+INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(3, 3, 3);
+INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(4, 4, 4);
+INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(5, 5, 6);
+INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(6, 6, 5);
+
 
 
 insert into Persona (IdPersona, NumDocumento, LugarExpedicion, FechaExpedicion, Nombres, Apellidos, Celular) values (1, 999999, 'Fram', '10/26/1998', 'Anatole', 'Bayldon', 3461533);
