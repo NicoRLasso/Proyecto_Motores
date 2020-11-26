@@ -1,3 +1,4 @@
+
 CREATE TABLE Asignatura (
   IdAsignatura int NOT NULL,
   IdNivelPensum int NOT NULL,
@@ -23,7 +24,7 @@ CREATE TABLE EstudiantePrograma (
   IdPersona int NOT NULL,
   IdPrograma int NOT NULL,
   CodEstudiante int NOT NULL,
-  IdPensum int NOT NULL,
+  IdPensum int NOT NULL
 ) ;
 
 CREATE TABLE Facultad (
@@ -66,10 +67,10 @@ CREATE TABLE Pensum (
 CREATE TABLE Persona (
   IdPersona int NOT NULL,
   NumDocumento int NOT NULL,
-  LugarExpedicion varchar(20) 
+  LugarExpedicion varchar(30) ,
   FechaExpedicion date NOT NULL,
   Nombres varchar(40) ,
-  Apellidos varchar(20) ,
+  Apellidos varchar(30) ,
   Celular int NOT NULL
 ) ;
 
@@ -108,86 +109,64 @@ CREATE TABLE Sede (
   CIUDAD varchar(30) 
 ) ;
 
-ALTER TABLE Asignatura ADD PRIMARY KEY (IdAsignatura)
+ALTER TABLE Asignatura ADD PRIMARY KEY (IdAsignatura);
 
-ALTER TABLE Divicion
-  ADD PRIMARY KEY (IdDivicion)
+ALTER TABLE Divicion ADD PRIMARY KEY (IdDivicion);
 
 
-ALTER TABLE EstudiantePrograma
-  ADD PRIMARY KEY (IdEstudiantePrograma)
+ALTER TABLE EstudiantePrograma  ADD PRIMARY KEY (IdEstudiantePrograma);
 
-ALTER TABLE Facultad
-  ADD PRIMARY KEY (IdFacultad)
+ALTER TABLE Facultad  ADD PRIMARY KEY (IdFacultad);
   
-ALTER TABLE Grupo
-  ADD PRIMARY KEY (IdGrupo)
+ALTER TABLE Grupo  ADD PRIMARY KEY (IdGrupo);
+
+ALTER TABLE Nivel  ADD PRIMARY KEY (IdNivelPensum);
 
 
-ALTER TABLE Nivel
-  ADD PRIMARY KEY (IdNivelPensum)
+ALTER TABLE Pensum  ADD PRIMARY KEY (IdPensum);
 
 
-ALTER TABLE Pensum
-  ADD PRIMARY KEY (IdPensum);
+ALTER TABLE Persona  ADD PRIMARY KEY (IdPersona);
+
+ALTER TABLE Programa  ADD PRIMARY KEY (IdPrograma);
+
+ALTER TABLE Seccional  ADD PRIMARY KEY (IdSeccional);
 
 
-ALTER TABLE Persona
-  ADD PRIMARY KEY (IdPersona);
+ALTER TABLE Sede  ADD PRIMARY KEY (IdSede);
 
-ALTER TABLE Programa
-  ADD PRIMARY KEY (IdPrograma)
-
-ALTER TABLE Seccional
-  ADD PRIMARY KEY (IdSeccional);
+ALTER TABLE docente  ADD PRIMARY KEY (coddocente);
 
 
-ALTER TABLE Sede
-  ADD PRIMARY KEY (IdSede)
-
-ALTER TABLE docente
-  ADD PRIMARY KEY (coddocente)
-
-
-ALTER TABLE docente
-  ADD CONSTRAINT Fk_IdNivelPensum FOREIGN KEY (idpersona) REFERENCES persona (idpersona) ON UPDATE CASCADE;
+ALTER TABLE docente  ADD CONSTRAINT Fk_IdNivelPensum FOREIGN KEY (idpersona) REFERENCES persona (idpersona) ON UPDATE CASCADE;
 
 ALTER TABLE Asignatura
   ADD CONSTRAINT Fk_IdNivelPensum FOREIGN KEY (IdNivelPensum) REFERENCES Nivel (IdNivelPensum) ON UPDATE CASCADE;
 
 
-ALTER TABLE Divicion
-  ADD CONSTRAINT Fk_Divicion FOREIGN KEY (IdSeccional) REFERENCES Seccional (IdSeccional);
+ALTER TABLE Divicion  ADD CONSTRAINT Fk_Divicion FOREIGN KEY (IdSeccional) REFERENCES Seccional (IdSeccional);
 
 ALTER TABLE EstudiantePrograma
   ADD CONSTRAINT Fk_est_programa FOREIGN KEY (IdPrograma) REFERENCES programa (IdPrograma) ON UPDATE CASCADE,
   ADD CONSTRAINT Fk_estud_Pensum FOREIGN KEY (IdPensum) REFERENCES Pensum (IdPensum) ON UPDATE CASCADE;
 
 
-ALTER TABLE Facultad
-  ADD CONSTRAINT Fk_Divicion_Facultad FOREIGN KEY (IdDivicion) REFERENCES Divicion (IdDivicion);
+ALTER TABLE Facultad  ADD CONSTRAINT Fk_Divicion_Facultad FOREIGN KEY (IdDivicion) REFERENCES Divicion (IdDivicion);
 
 
-ALTER TABLE Grupo
-  ADD CONSTRAINT Fk_IdAsignatura FOREIGN KEY (IdAsignatura) REFERENCES Asignatura (IdAsignatura) ON UPDATE CASCADE;
+ALTER TABLE Grupo  ADD CONSTRAINT Fk_IdAsignatura FOREIGN KEY (IdAsignatura) REFERENCES Asignatura (IdAsignatura) ON UPDATE CASCADE;
 
 
-ALTER TABLE Nivel
-  ADD CONSTRAINT Fk_id_pens FOREIGN KEY (IdPensum) REFERENCES Pensum (IdPensum) ON UPDATE CASCADE;
+ALTER TABLE Nivel  ADD CONSTRAINT Fk_id_pens FOREIGN KEY (IdPensum) REFERENCES Pensum (IdPensum) ON UPDATE CASCADE;
 
-ALTER TABLE programa
-  ADD CONSTRAINT Fk_programa_Facultad FOREIGN KEY (IdFacultad) REFERENCES Facultad (IdFacultad);
+ALTER TABLE programa  ADD CONSTRAINT Fk_programa_Facultad FOREIGN KEY (IdFacultad) REFERENCES Facultad (IdFacultad);
 
-ALTER TABLE Sede
-  ADD CONSTRAINT FK_Seccional FOREIGN KEY (IdSeccional) REFERENCES Seccional (IdSeccional) ON UPDATE CASCADE;
+ALTER TABLE Sede  ADD CONSTRAINT FK_Seccional FOREIGN KEY (IdSeccional) REFERENCES Seccional (IdSeccional) ON UPDATE CASCADE;
 COMMIT;
 
-ALTER TABLE grupo
-  ADD CONSTRAINT Fk_IdGrupoDocente FOREIGN KEY (coddocente) REFERENCES docente (coddocente) ON UPDATE CASCADE;
+ALTER TABLE grupo  ADD CONSTRAINT Fk_IdGrupoDocente FOREIGN KEY (coddocente) REFERENCES docente (coddocente) ON UPDATE CASCADE;
 
-ALTER TABLE estudianteprograma 
-  ADD CONSTRAINT Fk_Idestuproper FOREIGN KEY (idpersona) REFERENCES persona (idpersona) ON UPDATE CASCADE;
+ALTER TABLE estudianteprograma   ADD CONSTRAINT Fk_Idestuproper FOREIGN KEY (idpersona) REFERENCES persona (idpersona) ON UPDATE CASCADE;
   
-ALTER TABLE pensum 
-  ADD CONSTRAINT Fk_Idpensumprogram FOREIGN KEY (idprograma) REFERENCES programa (idprograma) ON UPDATE CASCADE;
+ALTER TABLE pensum   ADD CONSTRAINT Fk_Idpensumprogram FOREIGN KEY (idprograma) REFERENCES programa (idprograma) ON UPDATE CASCADE;
 
