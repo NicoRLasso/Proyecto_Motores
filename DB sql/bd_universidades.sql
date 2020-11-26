@@ -71,7 +71,7 @@ CREATE TABLE Persona (
   FechaExpedicion date,
   Nombres varchar(20) ,
   Apellidos varchar(20) ,
-  telefono int NOT NULL
+  telefono varchar(15)
 ) ;
 
 CREATE TABLE Docente (
