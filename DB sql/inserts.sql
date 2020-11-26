@@ -45,6 +45,7 @@ insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (27
 insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (28, 2, 'Discovery Communications, Inc.', '594', 'Detusoko');
 insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (29, 6, 'Nuveen New Jersey Quality Municipal Income Fund', '3057', 'Suicheng');
 insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (30, 5, 'Fidelity Southern Corporation', '1616', 'Belyy Gorodok');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (31, 1, ' Campus Cara Therapeutics, Inc.', '4', 'Osiek');
 
 INSERT INTO Facultad (IdFacultad, IdDivicion, NombreFacultad, Decano, Telefono)
  VALUES
