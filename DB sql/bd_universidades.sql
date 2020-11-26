@@ -1,4 +1,6 @@
 
+ALTER DATABASE database_name SET datestyle TO "ISO, DMY";
+
 CREATE TABLE Asignatura (
   IdAsignatura int NOT NULL,
   IdNivelPensum int NOT NULL,
@@ -68,7 +70,7 @@ CREATE TABLE Persona (
   IdPersona int NOT NULL,
   NumDocumento int NOT NULL,
   LugarExpedicion varchar(30) ,
-  FechaExpedicion date NOT NULL,
+  FechaExpedicion varchar(30),
   Nombres varchar(40) ,
   Apellidos varchar(30) ,
   Celular int NOT NULL
