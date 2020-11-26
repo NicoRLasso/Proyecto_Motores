@@ -98,6 +98,7 @@ insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo)
 
 INSERT INTO pensum (IdPensum, IdPrograma, Activo,Oferta)
 VALUES
+<<<<<<< HEAD:DB sql/inserts.sql
 (1,1,'Activo','Hasta 20 Estudiantes'),
 (2,3,'Inactivo','Hasta 30 Estudiantes'),
 (4,2,'Activo','Hasta 20 Estudiantes'),
@@ -128,6 +129,9 @@ VALUES
 (29,29,'Activo','Hasta 20 Estudiantes'),
 (30,30,'Inactivo','Hasta 40 Estudiantes');
 
+=======
+(1,1,'Activo','Hasta 40 Estudiantes');
+>>>>>>> fb7819bdd4c198a54d90574ab149df82d3a6cc02:DB SQL/inserts.sql
 
 INSERT INTO nivel (IdNivelPensum, nivel , idpensum)
 VALUES
