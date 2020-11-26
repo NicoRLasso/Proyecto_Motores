@@ -1,5 +1,4 @@
 
-ALTER DATABASE database_name SET datestyle TO "ISO, DMY";
 
 CREATE TABLE Asignatura (
   IdAsignatura int NOT NULL,
@@ -172,3 +171,5 @@ ALTER TABLE estudianteprograma   ADD CONSTRAINT Fk_Idestuproper FOREIGN KEY (idp
   
 ALTER TABLE pensum   ADD CONSTRAINT Fk_Idpensumprogram FOREIGN KEY (idprograma) REFERENCES programa (idprograma) ON UPDATE CASCADE;
 
+
+ALTER DATABASE universidad SET datestyle TO "ISO, DMY";
