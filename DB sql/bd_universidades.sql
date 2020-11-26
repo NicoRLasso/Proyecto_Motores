@@ -1,11 +1,13 @@
+CREATE TYPE Activo AS ENUM ('Inactivo', 'Activo');
+
 CREATE TABLE Asignatura (
   IdAsignatura int NOT NULL,
   IdNivelPensum int NOT NULL,
-  Nombre varchar(40),
-  Creditos int NOT NULL,
-  AreaConocimientos varchar (40),
-  HoraSemestrePresencial int NOT NULL,
-  HoraSemestreTrabajoIndepen int NOT NULL
+  Nombre varchar(20),
+  Creditos SMALLINT NOT NULL,
+  AreaConocimientos varchar (20),
+  HoraSemestrePresencial SMALLINT NOT NULL,
+  HoraSemestreTrabajoIndepen SMALLINT NOT NULL
 ) ;
 
 
@@ -14,7 +16,7 @@ CREATE TABLE Divicion (
   IdSeccional int NOT NULL,
   NombreDivicion varchar(40) ,
   DecanoDivicion varchar(40) ,
-  Direccion varchar(30) 
+  Direccion varchar(20) 
 ) ;
 
 
@@ -30,8 +32,8 @@ CREATE TABLE Facultad (
   IdFacultad int NOT NULL,
   IdDivicion int NOT NULL,
   NombreFacultad varchar(30),
-  Decano varchar(30) ,
-  Telefono varchar(30) 
+  Decano varchar(20) ,
+  Telefono int
 ) ;
 
 
@@ -52,12 +54,11 @@ CREATE TABLE Nivel (
 ) ;
 
 
-
 CREATE TABLE Pensum (
   IdPensum int NOT NULL,
   IdPrograma int NOT NULL,
-  Activo varchar(20) ,
-  Oferta varchar(20)NOT NULL
+  Activo Activo,
+  Ofertamxestu varchar(20)NOT NULL
 ) ;
 
 
@@ -66,10 +67,10 @@ CREATE TABLE Pensum (
 CREATE TABLE Persona (
   IdPersona int NOT NULL,
   NumDocumento int NOT NULL,
-  LugarExpedicion varchar(30) ,
-  FechaExpedicion varchar(30),
-  Nombres varchar(40) ,
-  Apellidos varchar(30) ,
+  LugarExpedicion varchar(20) ,
+  FechaExpedicion date,
+  Nombres varchar(20) ,
+  Apellidos varchar(20) ,
   Celular int NOT NULL
 ) ;
 
@@ -77,16 +78,16 @@ CREATE TABLE Docente (
 
   coddocente int NOT NULL,
   IdPersona int NOT NULL,
-  area varchar (30)
+  area varchar (20)
 ) ;
 
 
 CREATE TABLE Programa (
   IdPrograma int NOT NULL,
   IdFacultad int NOT NULL,
-  NombrePrograma varchar(40) ,
-  MODALIDAD varchar(20) ,
-  Activo varchar(30) NOT NULL
+  NombrePrograma varchar(20) ,
+  MODALIDAD varchar(10) ,
+  Activo Activo
 ) ;
 
 
@@ -94,17 +95,17 @@ CREATE TABLE Programa (
 CREATE TABLE Seccional (
   IdSeccional int NOT NULL,
   Nombre varchar(40) ,
-  CIUDAD varchar(40) ,
-  Direccion varchar(40) ,
+  CIUDAD varchar(20) ,
+  Direccion varchar(30) ,
   Telefono int NOT NULL,
-  RECTOR varchar(40) NOT NULL
+  RECTOR varchar(20) NOT NULL
 ) ;
 
 CREATE TABLE Sede (
   IdSede int NOT NULL,
   IdSeccional int NOT NULL,
-  NombreSede text ,
-  Direccion int NOT NULL,
+  NombreSede varchar(30) ,
+  Direccion varchar(20) NOT NULL,
   CIUDAD varchar(30) 
 ) ;
 

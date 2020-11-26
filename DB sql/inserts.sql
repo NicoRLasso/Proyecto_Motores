@@ -15,120 +15,120 @@ INSERT INTO Divicion (IdDivicion, IdSeccional, NombreDivicion, DecanoDivicion, D
  (4,1,'Artes','Diana Figueroa','cra 11 #11-14');
  
  
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (1, 3, 'CVR Energy Inc.', '83', 'Saint Paul');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (2, 2, 'Teekay Tankers Ltd.', '997', 'Madīnat Sittah Uktūbar');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (3, 2, 'Green Plains, Inc.', '7870', 'Ijero-Ekiti');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (4, 1, 'Maxwell Technologies, Inc.', '937', 'Gaotian');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (5, 3, 'Monarch Casino & Resort, Inc.', '987', 'Panzhou');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (6, 6, 'China Telecom Corp Ltd', '03', 'Ehu');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (7, 5, 'Andina Acquisition Corp. II', '4', 'Lomé');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (8, 4, 'Gray Television, Inc.', '5166', 'Shimen');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (1, 3, 'CVR Energy', '83', 'Saint Paul');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (2, 2, 'Teekay Tankers .', '997', 'Madīnat Sittah Uktūbar');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (3, 2, 'Green Plains,', '7870', 'Ijero-Ekiti');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (4, 1, 'Maxwell ,', '937', 'Gaotian');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (5, 3, 'Monarch Casino & Resort,', '987', 'Panzhou');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (6, 6, 'China Telecom  ', '03', 'Ehu');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (7, 5, 'Andina Acquisition . II', '4', 'Lomé');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (8, 4, 'Gray Television,', '5166', 'Shimen');
 insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (9, 1, 'TC PipeLines, LP', '4617', 'Mbongawani');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (10, 3, 'Axovant Sciences Ltd.', '314', 'Chociwel');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (11, 1, 'Suncor Energy  Inc.', '86927', 'Troyes');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (12, 6, 'Bridge Bancorp, Inc.', '11040', 'Água de Pau');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (13, 1, 'MasTec, Inc.', '5', 'Tsu-shi');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (14, 2, 'Five Oaks Investment Corp.', '7', 'Corumbá');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (15, 5, 'Forterra, Inc.', '6114', 'Banjar Jabejero');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (16, 4, 'Veritone, Inc.', '545', 'Xuchang');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (17, 1, 'Mitcham Industries, Inc.', '65', 'Toupopu');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (18, 4, 'Wal-Mart Stores, Inc.', '5', 'Aix-en-Provence');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (19, 5, 'Coach, Inc.', '00541', 'Tours');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (20, 4, 'CTI BioPharma Corp.', '821', 'Guojiazhuang');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (10, 3, 'Axovant Sciences .', '314', 'Chociwel');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (11, 1, 'Suncor Energy ', '86927', 'Troyes');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (12, 6, 'Bridge Ban,', '11040', 'Água de Pau');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (13, 1, 'MasTec,', '5', 'Tsu-shi');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (14, 2, 'Five Oaks  .', '7', 'Corumbá');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (15, 5, 'Forterra,', '6114', 'Banjar Jabejero');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (16, 4, 'Veritone,', '545', 'Xuchang');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (17, 1, 'Mitcham Industries,', '65', 'Toupopu');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (18, 4, 'Wal-Mart Stores,', '5', 'Aix-en-Provence');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (19, 5, 'Coach,', '00541', 'Tours');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (20, 4, 'CTI BioPharma .', '821', 'Guojiazhuang');
 insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (21, 3, 'Morgan Stanley', '583', 'Targuist');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (22, 4, 'iShares MSCI ACWI Index Fund', '19137', 'Skopin');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (22, 4, 'iShares d', '19137', 'Skopin');
 insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (23, 4, 'Arc Logistic Partners LP', '2331', 'Malandag');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (24, 5, 'Otonomy, Inc.', '864', 'Adygeysk');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (25, 6, 'CardConnect Corp.', '39531', 'Bentar');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (26, 1, 'Cara Therapeutics, Inc.', '4', 'Osiek');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (27, 4, 'PennyMac Financial Services, Inc.', '33', 'Petushki');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (28, 2, 'Discovery Communications, Inc.', '594', 'Detusoko');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (29, 6, 'Nuveen New Jersey Quality Municipal Income Fund', '3057', 'Suicheng');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (30, 5, 'Fidelity Southern Corporation', '1616', 'Belyy Gorodok');
-insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (31, 1, ' Campus Cara Therapeutics, Inc.', '4', 'Osiek');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (24, 5, 'Otonomy,', '864', 'Adygeysk');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (25, 6, 'CardConnect .', '39531', 'Bentar');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (26, 1, 'Cara Therapeutics,', '4', 'Osiek');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (27, 4, 'PennyMac Financial ,', '33', 'Petushki');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (28, 2, 'Discovery ,', '594', 'Detusoko');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (29, 6, 'Nuveen New Jerse', '3057', 'Suicheng');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (30, 5, 'Fidelity Southern', '1616', 'Belyy Gorodok');
+insert into sede (IdSede, IdSeccional, NombreSede, Direccion, CIUDAD) values (31, 1, ' Campus Cara ,', '4', 'Osiek');
 
 INSERT INTO Facultad (IdFacultad, IdDivicion, NombreFacultad, Decano, Telefono)
  VALUES
- (1,1,'Diseño Grafico','Predo Perez',3016250495),
- (2,1,'Arquitectura','Juan Cruz',1235698456),
- (3,2,'Odontologia','Felipe Limas',3116545869),
- (4,2,'Fisioterapia','Fredy Cardozo',3123659685),
- (5,2,'Radiologia','Gustavo Frezno',3123659685),
- (6,2,'Gastroenterologia','Jorge Rojas',3125748965),
- (7,3,'Ingenieria en Sistemas','Andres MEdina',31456899657),
- (8,3,'Ingenietia Electronica','Fredy Aponte',3112452525),
- (9,3,'Ingenieria Ambiental','Gustavo Guiza',3112053020),
- (10,3,'Ingenieria Industrial','Sergip Rojas',3132053060),
- (11,4,'Musica','Sergip Rodriguez',31320530680),
- (12,4,'Artes Escenicas','Nicolas Rojas',3132013060),
- (13,4,'Artes Plasticas','Andres Perez',3132056060),
- (14,4,'Poesia y Declamacion','Camila Restrepo',3132053560);
+ (1,1,'Diseño Grafico','Predo Perez',111111111),
+ (2,1,'Arquitectura','Juan Cruz',1111111111),
+ (3,2,'Odontologia','Felipe Limas',1111111111),
+ (4,2,'Fisioterapia','Fredy Cardozo',1111111111),
+ (5,2,'Radiologia','Gustavo Frezno',1111111111),
+ (6,2,'Gastroenterologia','Jorge Rojas',1111111111),
+ (7,3,'Ingenieria en Sistemas','Andres MEdina',1111111111),
+ (8,3,'Ingenietia Electronica','Fredy Aponte',1111111111),
+ (9,3,'Ingenieria Ambiental','Gustavo Guiza',1111111111),
+ (10,3,'Ingenieria Industrial','Sergip Rojas',1111111111),
+ (11,4,'Musica','Sergip Rodriguez',1111111111),
+ (12,4,'Artes Escenicas','Nicolas Rojas',1111111111),
+ (13,4,'Artes Plasticas','Andres Perez',1111111111),
+ (14,4,'Poesia y Declamacion','Camila Restrepo',1111111111);
  
 
 
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (1, 5, 'Asoka', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (2, 5, 'Tresom', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (3, 8, 'Alpha', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (4, 2, 'Keylex', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (5, 1, 'Viva', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (6, 10, 'Fix San', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (7, 1, 'Mat Lam Tam', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (8, 9, 'Temp', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (9, 9, 'Stim', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (10, 2, 'Hatity', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (11, 4, 'Lotlux', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (12, 11, 'Zaam-Dox', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (13, 3, 'Pannier', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (14, 13, 'Solarbreeze', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (15, 6, 'Treeflex', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (16, 14, 'Gembucket', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (17, 4, 'Zaam-Dox', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (18, 14, 'Duobam', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (19, 5, 'Zoolab', 'Virtual', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (20, 13, 'Matsoft', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (21, 9, 'Regrant', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (22, 11, 'Namfix', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (23, 10, 'Regrant', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (24, 6, 'Bitwolf', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (25, 4, 'Konklux', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (26, 14, 'Y-Solowarm', 'Presencial', true);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (27, 8, 'Stringtough', 'Presencial', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (28, 3, 'Tampflex', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (29, 12, 'Fix San', 'Virtual', false);
-insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (30, 6, 'Ventosanzap', 'Virtual', false);
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (1, 5, 'Asoka', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (2, 5, 'Tresom', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (3, 8, 'Alpha', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (4, 2, 'Keylex', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (5, 1, 'Viva', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (6, 10, 'Fix San', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (7, 1, 'Mat Lam Tam', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (8, 9, 'Temp', 'Presencial', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (9, 9, 'Stim', 'Virtual', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (10, 2, 'Hatity', 'Virtual', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (11, 4, 'Lotlux', 'Virtual', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (12, 11, 'Zaam-Dox', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (13, 3, 'Pannier', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (14, 13, 'Solarbreeze', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (15, 6, 'Treeflex', 'Virtual', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (16, 14, 'Gembucket', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (17, 4, 'Zaam-Dox', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (18, 14, 'Duobam', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (19, 5, 'Zoolab', 'Virtual', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (20, 13, 'Matsoft', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (21, 9, 'Regrant', 'Presencial', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (22, 11, 'Namfix', 'Presencial', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (23, 10, 'Regrant', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (24, 6, 'Bitwolf', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (25, 4, 'Konklux', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (26, 14, 'Y-Solowarm', 'Presencial', 'Activo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (27, 8, 'Stringtough', 'Presencial', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (28, 3, 'Tampflex', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (29, 12, 'Fix San', 'Virtual', 'Inactivo');
+insert into Programa (IdPrograma, IdFacultad, NombrePrograma, MODALIDAD, Activo) values (30, 6, 'Ventosanzap', 'Virtual', 'Inactivo');
 
-INSERT INTO pensum (IdPensum, IdPrograma, Activo,Oferta)
+INSERT INTO pensum (IdPensum, IdPrograma, Activo,Ofertamxestu)
 VALUES
-(1,1,'Activo','Hasta 20 Estudiantes'),
-(2,3,'Inactivo','Hasta 30 Estudiantes'),
-(4,2,'Activo','Hasta 20 Estudiantes'),
-(5,4,'Activo','Hasta 30 Estudiantes'),
-(6,5,'Inactivo','Hasta 40 Estudiantes'),
-(3,6,'Activo','Hasta 40 Estudiantes'),
-(8,9,'Activo','Hasta 30 Estudiantes'),
-(7,8,'Activo','Hasta 40 Estudiantes'),
-(9,7,'Inactivo','Hasta 30 Estudiantes'),
-(10,11,'Activo','Hasta 40 Estudiantes'),
-(11,10,'Activo','Hasta 30 Estudiantes'),
-(13,12,'Inactivo','Hasta 20 Estudiantes'),
-(12,13,'Activo','Hasta 30 Estudiantes'),
-(15,14,'Activo','Hasta 20 Estudiantes'),
-(16,15,'Inactivo','Hasta 30 Estudiantes'),
-(14,16,'Activo','Hasta 40 Estudiantes'),
-(18,17,'Inactivo','Hasta 20 Estudiantes'),
-(17,18,'Activo','Hasta 40 Estudiantes'),
-(19,20,'Activo','Hasta 30 Estudiantes'),
-(20,22,'Activo','Hasta 40 Estudiantes'),
-(22,23,'Inactivo','Hasta 40 Estudiantes'),
-(23,21,'Inactivo','Hasta 40 Estudiantes'),
-(21,21,'Activo','Hasta 30 Estudiantes'),
-(24,24,'Inactivo','Hasta 30 Estudiantes'),
-(25,25,'Activo','Hasta 40 Estudiantes'),
-(26,26,'Activo','Hasta 20 Estudiantes'),
-(27,27,'Inactivo','Hasta 30 Estudiantes'),
-(28,28,'Activo','Hasta 30 Estudiantes'),
-(29,29,'Activo','Hasta 20 Estudiantes'),
-(30,30,'Inactivo','Hasta 40 Estudiantes');
+(1,1,'Activo','20 Estudiantes'),
+(2,3,'Inactivo','30 Estudiantes'),
+(4,2,'Activo','20 Estudiantes'),
+(5,4,'Activo','30 Estudiantes'),
+(6,5,'Inactivo','40 Estudiantes'),
+(3,6,'Activo','40 Estudiantes'),
+(8,9,'Activo','30 Estudiantes'),
+(7,8,'Activo','40 Estudiantes'),
+(9,7,'Inactivo','30 Estudiantes'),
+(10,11,'Activo','40 Estudiantes'),
+(11,10,'Activo','30 Estudiantes'),
+(13,12,'Inactivo','20 Estudiantes'),
+(12,13,'Activo','30 Estudiantes'),
+(15,14,'Activo','20 Estudiantes'),
+(16,15,'Inactivo','30 Estudiantes'),
+(14,16,'Activo','40 Estudiantes'),
+(18,17,'Inactivo','20 Estudiantes'),
+(17,18,'Activo','40 Estudiantes'),
+(19,20,'Activo','30 Estudiantes'),
+(20,22,'Activo','40 Estudiantes'),
+(22,23,'Inactivo','40 Estudiantes'),
+(23,21,'Inactivo','40 Estudiantes'),
+(21,21,'Activo','30 Estudiantes'),
+(24,24,'Inactivo','30 Estudiantes'),
+(25,25,'Activo','40 Estudiantes'),
+(26,26,'Activo','20 Estudiantes'),
+(27,27,'Inactivo','30 Estudiantes'),
+(28,28,'Activo','30 Estudiantes'),
+(29,29,'Activo','20 Estudiantes'),
+(30,30,'Inactivo','40 Estudiantes');
 
 
 INSERT INTO public.nivel (idnivelpensum, nivel, idpensum) VALUES(1, 1, 1);
