@@ -68,7 +68,7 @@ CREATE TABLE Pensum (
 CREATE TABLE Persona (
   IdPersona int NOT NULL,
   NumDocumento int NOT NULL,
-  LugarExpedicion varchar(20) ,
+  LugarExpedicion varchar(30) ,
   FechaExpedicion date,
   Nombres varchar(20) ,
   Apellidos varchar(20) ,
