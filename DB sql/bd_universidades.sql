@@ -72,7 +72,7 @@ CREATE TABLE Persona (
   FechaExpedicion date,
   Nombres varchar(20) ,
   Apellidos varchar(20) ,
-  telefono varchar(15)
+  telefono varchar(15),
   TipoDocumento TipoDocumento,
   Direccion varchar(30),
   email varchar(30)
