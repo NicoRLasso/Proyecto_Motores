@@ -1,4 +1,5 @@
 CREATE TYPE Activo AS ENUM ('Inactivo', 'Activo');
+CREATE TYPE TipoDocumento AS ENUM ('TI', 'CC','Pasaporte');
 
 CREATE TABLE Asignatura (
   IdAsignatura int NOT NULL,
@@ -72,6 +73,9 @@ CREATE TABLE Persona (
   Nombres varchar(20) ,
   Apellidos varchar(20) ,
   telefono varchar(15)
+  TipoDocumento TipoDocumento,
+  Direccion varchar(30),
+  email varchar(30)
 ) ;
 
 CREATE TABLE Docente (
